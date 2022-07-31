@@ -1,0 +1,33 @@
+{
+  "name": "ws_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stopall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfokin92/ahj_ws_server.git"
+  },
+  "author": "pfokin92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfokin92/ahj_ws_server/issues"
+  },
+  "homepage": "https://github.com/pfokin92/ahj_ws_server#readme",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.8.1"
+  }
+}
