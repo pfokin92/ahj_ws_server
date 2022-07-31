@@ -48,6 +48,8 @@ wsServer.on('connection', (ws, req) =>{
         const request = JSON.parse(msg);
         let response;
         if(request.login) {
+            console.log(userArr);
+            console.log(request.login);
             const userLogged = userArr.some((user) => user.name === request.login);
             if(userLogged) {
                 response = false;
